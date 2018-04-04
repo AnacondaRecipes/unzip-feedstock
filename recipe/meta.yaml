@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   skip: True  # [win]
-  script: make -f unix/Makefile generic && mv unzip $PREFIX/bin
+  script: mkdir -p $PREFIX/bin && make -f unix/Makefile generic && mv unzip $PREFIX/bin
 
 requirements:
   build:
